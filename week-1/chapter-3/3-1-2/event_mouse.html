@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./event_mouse.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <img v-bind:src="path" alt="ロゴ画像" v-on:mouseenter="onmouseenter" v-on:mouseleave="onmouseleave">
+  </div>
+
+  <script src="./event_mouse.js"></script>
+</body>
+</html>
