@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <select v-model="attr">
+      <option value="height">高さ</option>
+      <option value="width">横幅</option>
+    </select>：
+    <input type="text" size="5" v-model="size"><br>
+    <img src="https://afflux.jp/wp-content/uploads/2018/06/neko_image-1024x856.jpg" alt="neko" v-bind:[attr]="size">
+  </div>
+  <script src="./bind_dynamic.js"></script>
+</body>
+</html>

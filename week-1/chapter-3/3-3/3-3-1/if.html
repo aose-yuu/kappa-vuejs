@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+   <div id="app">
+     <form>
+       <label for="show">表示／非表示</label>
+       <input type="checkbox" id="show" v-model="show">
+     </form>
+     <div id="panel" v-if="show">
+       <h3>RSSフィードについて</h3>
+       <p>弊社では、執筆の書籍／雑誌／Web記事の最新50件をRSS形式で提供しています。</p>
+       <p>RSSとは何か、その使い方を含め、ご案内します。</p>
+     </div>
+     <div v-else>
+       <p>現在、非表示状態です。</p>
+     </div>
+   </div>
+   <script src="./if.js"></script>
+</body>
+</html>
