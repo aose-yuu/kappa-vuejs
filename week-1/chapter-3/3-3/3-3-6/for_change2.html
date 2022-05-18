@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <form>
+      <input type="button" value="変更" v-on:click="onshift">
+    </form>
+    <ul>
+      <li v-for="item in list" v-bind:key="item">{{ item }}</li>
+    </ul>
+  </div>
+  <script src="./for_change2.js"></script>
+</body>
+</html>
